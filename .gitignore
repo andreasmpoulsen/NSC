@@ -1,1 +1,3 @@
 *.pyperf
+.vs
+.code
