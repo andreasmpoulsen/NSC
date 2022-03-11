@@ -1,5 +1,5 @@
 from timeit import default_timer as timer
-
+from tkinter.tix import MAX
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -18,9 +18,9 @@ def mandelbrot(start_x=-2, end_x=1, start_y=-1.5, end_y=1.5, WIDTH=1500, HEIGHT=
     return n
 
 
-def plot_naive():
+def plot_naive(WIDTH=1500, HEIGHT=1500, MAX_ITER=80):
     start = timer()
-    n = mandelbrot()
+    n = mandelbrot(WIDTH=WIDTH, HEIGHT=HEIGHT, MAX_ITER=MAX_ITER)
     end = timer()
     plt.figtext(0.5, 0.01, "Time to run: {:.2f} seconds".format(end-start), ha="center",
                 fontsize=14, bbox={"facecolor": "white", "alpha": 0.5, "pad": 4})

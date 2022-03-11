@@ -21,9 +21,9 @@ def mandelbrot(start_x=-2, end_x=1, start_y=-1.5, end_y=1.5, WIDTH=1500, HEIGHT=
     return div_time
 
 
-def plot_vectorized():
+def plot_vectorized(WIDTH=1500, HEIGHT=1500, MAX_ITER=80):
     start = timer()
-    n = mandelbrot()
+    n = mandelbrot(WIDTH=WIDTH, HEIGHT=HEIGHT, MAX_ITER=MAX_ITER)
     end = timer()
     plt.figtext(0.5, 0.01, "Time to run: {:.2f} seconds".format(end-start), ha="center",
                 fontsize=14, bbox={"facecolor": "white", "alpha": 0.5, "pad": 4})
