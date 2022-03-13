@@ -29,3 +29,7 @@ def plot_vectorized(WIDTH=1500, HEIGHT=1500, MAX_ITER=80):
                 fontsize=14, bbox={"facecolor": "white", "alpha": 0.5, "pad": 4})
     plt.imshow(n, cmap='magma')
     plt.show()
+
+
+if __name__ == '__main__':
+    plot_vectorized()

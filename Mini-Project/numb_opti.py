@@ -62,3 +62,7 @@ def plot_looped_optimized(WIDTH=1500, HEIGHT=1500, MAX_ITER=80):
 
 
 warnings.filterwarnings('ignore')
+
+if __name__ == '__main__':
+    plot_looped_optimized()
+    plot_vectorized_optimized()
