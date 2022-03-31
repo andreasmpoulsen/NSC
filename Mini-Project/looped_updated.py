@@ -29,7 +29,14 @@ def plot_naive(_dtype):
 
 
 if __name__ == '__main__':
-    plot_naive(np.float16)
-    plot_naive(np.float32)
-    plot_naive(np.float64)
-    plot_naive(np.longdouble)
+    _dtype_ = input("Please write a float size [16, 32, 64, 128]: ").strip()
+    if _dtype_ == "16":
+        plot_naive(np.float16)
+    elif _dtype_ == "32":
+        plot_naive(np.float32)
+    elif _dtype_ == "64":
+        plot_naive(np.float64)
+    elif _dtype_ == "128":
+        plot_naive(np.longdouble)
+    else:
+        print("{} is not a valid float size".format(_dtype_))
