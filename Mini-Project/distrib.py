@@ -35,4 +35,4 @@ def plot_vectorized(WIDTH, HEIGHT, _chunks):
 
 
 if __name__ == '__main__':
-    plot_vectorized()
+    plot_vectorized(1500, 1500, (50, 50))
