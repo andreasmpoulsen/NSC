@@ -3,7 +3,5 @@
 .code
 *.pyc
 .venv
-basic_test.py
 dask_array.py
-introspection.py
 *.zip
