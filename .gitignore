@@ -3,5 +3,4 @@
 .code
 *.pyc
 .venv
-dask_array.py
 *.zip
